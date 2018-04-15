@@ -24,14 +24,14 @@ var movies = [
     id: 4,
     title: "Ojciec chrzestny (1972)",
     originTitle: "The Godfather",
-    director: "	Francis Ford Coppola",
+    director: "Francis Ford Coppola",
     poster: "./images/4.jpg"
   },
   {
     id: 5,
     title: "Dwunastu gniewnych ludzi (1957)",
     originTitle: "12 Angry Men",
-    director: "	Sidney Lumet",
+    director: "Sidney Lumet",
     poster: "./images/5.jpg"
   }
 ];
