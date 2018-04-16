@@ -4,42 +4,47 @@ var movies = [
     title: "Skazani na Shawshank (1994)",
     originTitle: "The Shawshank Redemption",
     director: "Frank Darabont",
-    poster: "./images/1.jpg"
+    poster: "./images/1.jpg",
+    imgDesc: "Poster - The Shawshank Redemption"
   },
   {
     id: 2,
     title: "Nietykalni (2011)",
-    originTitle: "Intouchables ",
+    originTitle: "Intouchables",
     director: "Olivier Nakache, Eric Toledano",
-    poster: "./images/2.jpg"
+    poster: "./images/2.jpg",
+    imgDesc: "Poster - Intouchables"
   },
   {
     id: 3,
     title: "Zielona mila (1999)",
     originTitle: "The Green Mile",
     director: "Frank Darabont",
-    poster: "./images/3.jpg"
+    poster: "./images/3.jpg",
+    imgDesc: "Poster - The Green Mile"
   },
   {
     id: 4,
     title: "Ojciec chrzestny (1972)",
     originTitle: "The Godfather",
-    director: "	Francis Ford Coppola",
-    poster: "./images/4.jpg"
+    director: "Francis Ford Coppola",
+    poster: "./images/4.jpg",
+    imgDesc: "Poster - The Godfather"
   },
   {
     id: 5,
     title: "Dwunastu gniewnych ludzi (1957)",
     originTitle: "12 Angry Men",
-    director: "	Sidney Lumet",
-    poster: "./images/5.jpg"
+    director: "Sidney Lumet",
+    poster: "./images/5.jpg",
+    imgDesc: "Poster - 12 Angry Men"
   }
 ];
 var moviesElements = movies.map(function(movie) {
   return React.createElement(
     "li",
     { key: movie.id },
-    React.createElement("img", { src: movie.poster }),
+    React.createElement("img", { src: movie.poster, alt: movie.imgDesc }),
     React.createElement("h2", {}, movie.title),
     React.createElement("p", {}, movie.originTitle),
     React.createElement("p", {}, movie.director),
